@@ -247,10 +247,12 @@ dnsLogModule:
   # DnsLogCn = http://dnslog.cn的接口
   # BurpDnsLog = burp自带的dnslog接口
   # Ceye = http://ceye.io的接口
+  # DnsLogGo 需配合修改后的[DNSlog-GO](https://github.com/whoopscs/DNSlog-GO)使用
   provider: "DnsLogCn"
   # 其它数据,用于一些需要验证接口取值使用的
   # 注意: key=value;为一个参数
   # 例如:
   # a=1; b=2; c=3;
   # Ceye的配置等于: token=xxx;Identifier=xxxx.ceye.io;
+  # DnsLogGo的配置：token=admin;Identifier=admin.log.example.com;dnslogDomainName=ns.example.com:8000;
   other: "token=xxxxxxxxxxxx;Identifier=xxx.ceye.io;"

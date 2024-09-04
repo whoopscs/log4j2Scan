@@ -17,7 +17,7 @@ import burp.Application.RemoteCmdExtension.RemoteCmd;
 
 public class BurpExtender implements IBurpExtender, IScannerCheck, IExtensionStateListener {
     public static String NAME = "log4j2Scan";
-    public static String VERSION = "1.6.3";
+    public static String VERSION = "1.6.4";
 
     private GlobalVariableReader globalVariableReader;
 
@@ -70,8 +70,10 @@ public class BurpExtender implements IBurpExtender, IScannerCheck, IExtensionSta
         String str1 = "===================================\n";
         String str2 = String.format("%s 加载成功\n", NAME);
         String str3 = String.format("版本: %s\n", VERSION);
-        String str4 = "===================================\n";
-        String detail = str1 + str2 + str3 + str4;
+        String str4 = String.format("作者: pmiaowu\n");
+        String str5 = String.format("修改: whoopscs\n");
+        String str6 = "===================================\n";
+        String detail = str1 + str2 + str3 + str4 + str5 + str6;
         return detail;
     }
 
